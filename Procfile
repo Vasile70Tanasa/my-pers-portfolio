@@ -1,0 +1,1 @@
+web gunicorn pers_portfolio.wsgi:application --log-file -
