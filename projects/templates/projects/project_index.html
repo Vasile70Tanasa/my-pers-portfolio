@@ -9,6 +9,11 @@
             {% if project.image %}
                 <img class="card-img-top" src="{{ project.image.url }}">
             {% endif %}
+
+            {% if project.link %}
+            <a href="{{ project.link }}" class="btn btn-primary">Go to project</a>
+            {% endif %}
+
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>
